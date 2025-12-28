@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            cmbPeriod = new ComboBox();
+            SuspendLayout();
+            // 
+            // cmbPeriod
+            // 
+            cmbPeriod.AccessibleName = "";
+            cmbPeriod.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbPeriod.FormattingEnabled = true;
+            cmbPeriod.Location = new Point(5, 5);
+            cmbPeriod.Name = "cmbPeriod";
+            cmbPeriod.Size = new Size(121, 23);
+            cmbPeriod.TabIndex = 0;
+            cmbPeriod.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cmbPeriod);
+            Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private ComboBox cmbPeriod;
     }
 }

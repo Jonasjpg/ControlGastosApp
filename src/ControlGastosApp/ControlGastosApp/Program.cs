@@ -1,3 +1,5 @@
+using ControlGastosApp.Data;
+
 namespace ControlGastosApp
 {
     internal static class Program
@@ -11,6 +13,9 @@ namespace ControlGastosApp
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+
+            Db.Init();
+
             Application.Run(new Form1());
         }
     }
